@@ -1,0 +1,11 @@
+1. Mini Game + ระบบคะแนน / Ranking (per person)
+
+แนวเกม
+
+Endless runner (วิ่งหลบสิ่งกีดขวาง)
+
+Dodge / Tap หลบของตก
+
+เกมกดจังหวะ (Rhythm เบาๆ)
+
+REQUIRE : GUI , ANIMATION(MAIN) , 
