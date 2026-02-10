@@ -1,6 +1,5 @@
 package com.example.a522lablearnandroid
 
-import android.R.attr.text
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -19,7 +18,6 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -30,13 +28,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.intl.Locale
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.a522lablearnandroid.ui.theme._522LabLearnAndroidTheme
 
-class MainActivity : ComponentActivity() {
+class RPGCardActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -68,7 +64,7 @@ class MainActivity : ComponentActivity() {
                     .align(Alignment.CenterHorizontally)
                     .padding(top = 16.dp, bottom = 32.dp)
                     .clickable {
-                        startActivity(Intent(this@MainActivity, ListActivity::class.java))
+                        startActivity(Intent(this@RPGCardActivity, PokedexActivity::class.java))
                     }
             )
 
