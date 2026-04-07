@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "769347095841",
+    "project_id": "myclassroomapplab",
+    "storage_bucket": "myclassroomapplab.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769347095841:android:fbcdf7909cb22dad644260",
+        "android_client_info": {
+          "package_name": "com.example.lablearnandroid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_8N7m9nVwgi_acarGs-5fyALo5LeCtRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

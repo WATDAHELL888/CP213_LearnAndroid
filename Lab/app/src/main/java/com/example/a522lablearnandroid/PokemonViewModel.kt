@@ -1,16 +1,18 @@
+package com.example.a522lablearnandroid
+
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.a522lablearnandroid.utils.PokemonEntry
+import com.example.a522lablearnandroid.utils.PokemonNetwork
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
 class PokemonViewModel : ViewModel() {
-
     // State สำหรับบอกสถานะของหน้าจอ (Loading, Success, Error)
     // ในที่นี้เอาแบบง่ายสุดคือเก็บ List ของโปเกมอน
     private val _pokemonList = MutableStateFlow<List<PokemonEntry>>(emptyList())
     val pokemonList = _pokemonList.asStateFlow()
-
 
     init {
         fetchPokemon()

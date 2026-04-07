@@ -79,6 +79,6 @@ fun LifecycleComponent() {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview3() {
+fun GreetingPreview2() {
     LifecycleDemo()
 }

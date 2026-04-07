@@ -15,17 +15,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme._522LabLearnAndroid">
+        android:theme="@style/Theme.LabLearnAndroid"
+        tools:targetApi="31">
+        <activity
+            android:name=".CreateCopyActivity"
+            android:exported="true"
+            android:theme="@style/Theme.LabLearnAndroid"></activity>
         <activity
             android:name=".SharedPreferencesActivity"
             android:exported="false"
             android:label="@string/title_activity_shared_preferences"
-            android:theme="@style/Theme._522LabLearnAndroid" />
+            android:theme="@style/Theme.LabLearnAndroid" />
         <activity
             android:name=".MenuActivity"
             android:exported="true"
             android:label="@string/title_activity_menu"
-            android:theme="@style/Theme._522LabLearnAndroid">
+            android:theme="@style/Theme.LabLearnAndroid">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,25 +38,95 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LifeCycleComposeActivity"
-            android:exported="false"
-            android:label="LifeCycleComposeActivity"
-            android:theme="@style/Theme._522LabLearnAndroid" />
-        <activity
             android:name=".PokedexActivity"
             android:exported="false"
-            android:label="PokedexActivity"
-            android:theme="@style/Theme._522LabLearnAndroid" />
+            android:label="@string/title_activity_list"
+            android:theme="@style/Theme.LabLearnAndroid" />
+        <activity
+            android:name=".LifeCycleComposeActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.LabLearnAndroid" />
+        <activity
+            android:name=".architecture.mvc.MvcCounterActivity"
+            android:exported="true"
+            android:label="MVC Counter"
+            android:theme="@style/Theme.LabLearnAndroid" />
+        <activity
+            android:name=".architecture.mvp.MvpCounterActivity"
+            android:exported="true"
+            android:label="MVP Counter"
+            android:theme="@style/Theme.LabLearnAndroid" />
+        <activity
+            android:name=".architecture.mvvm.MvvmCounterActivity"
+            android:exported="true"
+            android:label="MVVM Counter"
+            android:theme="@style/Theme.LabLearnAndroid" />
+        <activity
+            android:name=".architecture.mvi.MviCounterActivity"
+            android:exported="true"
+            android:label="MVI Counter"
+            android:theme="@style/Theme.LabLearnAndroid" />
         <activity
             android:name=".RPGCardActivity"
-            android:exported="false"
-            android:label="RPGCardActivity"
-            android:theme="@style/Theme._522LabLearnAndroid" />
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.LabLearnAndroid"></activity>
         <activity
-            android:name=".GalleryActivity"
+            android:name=".ImagePickerActivity"
             android:exported="false"
-            android:label="GalleryActivity"
-            android:theme="@style/Theme._522LabLearnAndroid" />
+            android:label="Image Picker"
+            android:theme="@style/Theme.LabLearnAndroid" />
+        <activity
+            android:name=".SensorMvvmActivity"
+            android:exported="false"
+            android:label="Sensor MVVM"
+            android:theme="@style/Theme.LabLearnAndroid" />
+        <activity
+            android:name=".Part9Activity"
+            android:exported="false"
+            android:label="Collapsing Toolbar"
+            android:theme="@style/Theme.LabLearnAndroid" />
+        <activity
+            android:name=".ResponsiveProfileActivity"
+            android:exported="false"
+            android:label="Responsive Profile"
+            android:theme="@style/Theme.LabLearnAndroid" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false"
+            android:label="Detail Activity"
+            android:theme="@style/Theme.LabLearnAndroid" />
+        <activity
+            android:name=".WebViewActivity"
+            android:exported="false"
+            android:label="WebView Compose"
+            android:theme="@style/Theme.LabLearnAndroid" />
+        <activity
+            android:name=".SnackbarEffectActivity"
+            android:exported="false"
+            android:label="Snackbar Side Effect"
+            android:theme="@style/Theme.LabLearnAndroid" />
+        <activity
+            android:name=".TodoSwipeActivity"
+            android:exported="false"
+            android:label="Swipe To-Do List"
+            android:theme="@style/Theme.LabLearnAndroid" />
+        <activity
+            android:name=".DonutChartActivity"
+            android:exported="false"
+            android:label="Donut Chart Canvas"
+            android:theme="@style/Theme.LabLearnAndroid" />
+        <activity
+            android:name=".Part2Activity"
+            android:exported="false"
+            android:label="Complex List"
+            android:theme="@style/Theme.LabLearnAndroid" />
+        <activity
+            android:name=".LikeButtonActivity"
+            android:exported="false"
+            android:label="Like Button"
+            android:theme="@style/Theme.LabLearnAndroid" />
     </application>
 
 </manifest>
