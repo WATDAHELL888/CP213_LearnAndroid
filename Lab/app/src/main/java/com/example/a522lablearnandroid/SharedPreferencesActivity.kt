@@ -11,7 +11,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.a522lablearnandroid.ui.theme._522LabLearnAndroidTheme
+import com.example.a522lablearnandroid.ui.theme.LabLearnAndroidTheme
+import com.example.a522lablearnandroid.utils.SharedPreferencesUtil
 
 class SharedPreferencesActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,8 +21,8 @@ class SharedPreferencesActivity : ComponentActivity() {
         SharedPreferencesUtil.init(this)
 
         // การบันทึกค่า (เช่น เมื่อกดปุ่ม Save)
-        SharedPreferencesUtil.saveString("user_name", "Panapat")
-        SharedPreferencesUtil.saveBoolean("is_dark_mode", true)
+//        SharedPreferencesUtil.saveString("user_name", "Chanop") // <<<<<  แก้ชื่อเป้นของตัวเองด้วย
+//        SharedPreferencesUtil.saveBoolean("is_dark_mode", true)
 
         // การดึงค่ามาใช้งาน (เช่น เมื่อเปิดแอพขึ้นมาใหม่)
         val name = SharedPreferencesUtil.getString("user_name")
@@ -29,7 +30,7 @@ class SharedPreferencesActivity : ComponentActivity() {
 
         enableEdgeToEdge()
         setContent {
-            _522LabLearnAndroidTheme {
+            LabLearnAndroidTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
                         name = name,
@@ -52,7 +53,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    _522LabLearnAndroidTheme {
-        Greeting("Panapat")
+    LabLearnAndroidTheme {
+        Greeting("Android")
     }
 }
